@@ -23,7 +23,7 @@ public class AccountTest {
     }
 
     @Test
-    public void testWithDrawAmount() {
+    public void testWithdrawAmount() {
         Account account = new Account();
         account.deposit(100);
         account.withdraw(40);
