@@ -35,8 +35,10 @@ public class AccountTest {
         Account account1 = new Account();
         account1.deposit(100);
         Account account2 = new Account();
-        account1.deposit(40);
-        assertThat(account1.balance()).isEqualTo(60);
+        account2.deposit(40);
+
+        account1.transfer(account2, 30);
+        assertThat(account1.balance()).isEqualTo(70);
     }
 
 }
