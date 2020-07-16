@@ -30,4 +30,13 @@ public class AccountTest {
         assertThat(account.balance()).isEqualTo(60);
     }
 
+    @Test
+    public void testTransferAmount() {
+        Account account1 = new Account();
+        account1.deposit(100);
+        Account account2 = new Account();
+        account1.deposit(40);
+        assertThat(account1.balance()).isEqualTo(60);
+    }
+
 }
